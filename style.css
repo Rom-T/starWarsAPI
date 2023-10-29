@@ -1,0 +1,160 @@
+body {
+    background-color: #eee6db;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("background.jpeg") center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lora', sans-serif;
+}
+
+.header {
+    background-color: #04198f50;
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: #fff;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #daecf3;
+    font-size: 1.5rem;
+}
+
+nav {
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 700px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+button {
+    background-color: #405797;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: #596a97;
+}
+
+.nav-item button:hover {
+    background-color: #6877a0;
+}
+
+.nav-item .active:hover {
+    background-color: #596a97;
+    color: white;
+    border-color: #4a80ec;
+    cursor: default;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 1500px;
+}
+
+#ctn-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: rgba(56, 93, 116, 0.9);
+    width: 250px;
+    min-width: 250px;
+    text-wrap: wrap;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+
+.card-planet {
+    border: 3px solid gold;
+    text-shadow: 1px 1px 1px gold;
+}
+
+.card-people {
+    border: 3px solid green;
+    text-shadow: 1px 1px 1px green;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #04198f50;
+    color:#ffffff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:20px;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.active {
+    display: flex;
+    cursor: wait;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: x-large;
+    }
+
+    nav {
+        height: 70px;
+    }
+
+    button {
+        height: 35px;
+    }
+}

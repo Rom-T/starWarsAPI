@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Star Wars App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap&effect=neon|fire-animation" rel="stylesheet">
+    <link rel="icon" href="logo-icon.png">
+</head>
+<body>
+    <header class="header">
+        <h1 class="font-effect-neon">Star Wars</h1>
+        <h2>List of planets and people in the Star Wars universe</h2>
+    </header>
+
+    <nav>
+        <div class="nav-item">
+            <h3 class="font-effect-fire-animation">Planets</3>
+            <div>
+                <button id="planets-previous"><<< Previous</button>
+                <button id="planets-next">Next >>></button>
+            </div>
+        </div>
+
+        <div class="nav-item">
+            <h3 class="font-effect-fire-animation">People</3>
+            <div>
+                <button id="people-previous"><<< Previous</button>
+                <button id="people-next">Next >>></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="ctn-main"></div>
+    </main>
+
+    <div class="loader">LOADING...</div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 romanT. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
